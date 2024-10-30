@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let str = "Jakiś tam łańcuh znaków";
+
+        console.log(str.search("tam"));
+        
+        function submit() {
+            str = document.getElementById("napis").value;
+            document.getElementById("result").innerHTML = ("Długość napisu: " + str.length + " , a na 10 pozycji jest znak: " + str.charCodeAt(9));
+        }
+
+    </script>
+
+
+
+</head>
+<body>
+    <input type="text" id="napis" placeholder="wpisz słowo">
+    <button onclick="submit()">Submit</button>
+    <div id="result"></div>
+</body>
+</html>
